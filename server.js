@@ -20,7 +20,7 @@ if (!KEY) {
 // Allow requests only from your own frontend
 // ⚠️ After deploying: replace '*' with your actual Render URL for extra security e.g:
 // app.use(cors({ origin: 'https://skye-weather.onrender.com' }));
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'https://your-actual-url.onrender.com' }));
 app.use(express.static('public')); // Serves weather-app.html from the /public folder
 
 const OW_BASE = 'https://api.openweathermap.org/data/2.5';
